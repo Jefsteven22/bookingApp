@@ -1,0 +1,161 @@
+/* Aqui definimos las Custon Properties */
+:root {
+  /* Colores de la pagina */
+  --color-primario: ;
+  --color-secundario: ;
+
+  /* Tipografia */
+  --tipo-principal: ;
+  --tipo-secundaria: ;
+}
+
+/* Barra de desplazamiento */
+
+/* ::-webkit-scrollbar {
+  background: ;
+}
+
+::-webkit-scrollbar-thumb {
+  background: ;
+} */
+
+/* Adaptar los colores al modo oscuro de los dispositivos */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primario: ;
+    --color-secundario: ;
+  }
+}
+
+/* Reseteamos todos los margin y padding de todas las etiquetas */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* Evitamos problemas con las imagenes */
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Reseteo de los enlaces para que funcionen como cajas */
+
+a {
+  display: block;
+}
+
+/* ... Excepto los que se encuentran en parrafos */
+
+p a {
+  display: inline;
+}
+
+/* Quitamos la configuracion por defecto de las listas */
+
+li {
+  list-style-type: none;
+}
+
+/* configuracion de anclas suaves */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos los estilos por defecto de las principales etiquetas */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* Configurar el color del texto seleccioado */
+
+/* ::selection {
+  background-color: ;
+  color: ;
+} */
+
+/* Nivelaremos problemas de tipografias y colocaciones de formularios */
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+}
+
+/* Reseteamos las tablas */
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* Configuramos la tipografia para toda la web */
+
+body {
+  min-width: 100vw;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--color-primario);
+  background-color: var(--color-secundario);
+  line-height: 1.4em;
+}
